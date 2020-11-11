@@ -1,6 +1,7 @@
 <template>
   <h4>{{ msg }}</h4>
-  <button @click="count++">count is: {{ count }}</button>
+  <el-button @click="count++">count is: {{ count }}</el-button>
+  <el-button @click="showInfo">摸我</el-button>
   <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
 </template>
 
@@ -14,6 +15,11 @@ export default {
     return {
       count: 0
     }
-  }
+  },
+  methods: {
+    showInfo () {
+      this.$message('这是一条消息提示')
+    },
+  },
 }
 </script>
