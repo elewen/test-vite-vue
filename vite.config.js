@@ -22,5 +22,10 @@ module.exports = {
     //   changeOrigin: true,
     //   // rewrite: path => path.replace(/^\/lsbdb/, '')
     // }
-  }
+  },
+  cssPreprocessOptions: {
+    less: {
+      javascriptEnabled: true,
+    },
+  },
 }
